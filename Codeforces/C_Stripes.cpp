@@ -2,8 +2,8 @@
 using namespace std;
 main()                             
     {                                   
-        int t;                          
-        cin >> t;                       
+        int tc;                          
+        cin >> tc;                       
         while (t--)                     
         {                               
             int f = 0;                  
