@@ -16,33 +16,24 @@ using namespace std;
 
 void solve()
 {
-    int n;cin>>n;
+    int a;cin>>a;
+    int b;cin>>b;
+    int c;cin>>c;
     
-    int arr[n];
-    for (int i=0;i<n;i++){
-        cin>>arr[i];
+    if (c%2==0) {
+        if (a>b){ cout<<"First";NEW return;}
+        else{cout<<"Second";NEW return; }
+    }else {
+        a=a+(c/2)+1;
+        b=b+(c/2);
+        if (a>b){ cout<<"First";NEW return;}
+        else{cout<<"Second";NEW return; }
     }
-    sort(arr,arr+n);
-    if (arr[0]==arr[n-1]){ cout<<-1; NEW return ;}
-
-    int i =1;int cnt =0;
-    while (arr[i]==arr[i-1]){cnt++;i++;}
-    cout<<cnt+1<<" "<<n-(cnt+1);NEW
-    cout<<arr[0]<<" ";
-    forw(j,1,cnt) cout<< arr[0]<< " " ;
-    NEW
-    for (int j=cnt+1;j<n;j++){
-        cout << arr[j]<< " " ;
-    }
-    
-
-    NEW     
-
 }
 int main() {
 
     fast;
-    int t;
+    int t=1;
     cin>>t;
     while(t--)
     {
